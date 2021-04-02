@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM openjdk:16-ea-20
 
 ADD target/hl7-fhir-openapi-virtualservice.jar /openapi/virtualan/hl7-fhir-openapi-virtualservice.jar
 
