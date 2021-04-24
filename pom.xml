@@ -36,7 +36,7 @@
 			<plugin>
 				<groupId>org.openapitools</groupId>
 				<artifactId>openapi-generator-maven-plugin</artifactId>
-				<version>4.3.1</version>
+				<version>5.0.0</version>
 				<executions>
 					<execution>
 						<id>FHIR-service-vs-api</id>
@@ -280,6 +280,13 @@
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+			<version>2.4.5</version>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<version>${spring.boot.version}</version>
 			<scope>test</scope>
@@ -307,43 +314,12 @@
 				<version>${hsqldb.version}</version>
 			</dependency>
 			<!-- END Virtual Service API support -->
-
-			<!-- https://mvnrepository.com/artifact/javax.validation/validation-api -->
 			<dependency>
 				<groupId>javax.validation</groupId>
 				<artifactId>validation-api</artifactId>
 				<version>2.0.1.Final</version>
 			</dependency>
 
-
-				<!-- Setup BDD Test cases -->
-
-				<dependency>
-					<groupId>io.rest-assured</groupId>
-					<artifactId>rest-assured</artifactId>
-					<version>3.0.0</version>
-					<scope>test</scope>
-				</dependency>
-				<dependency>
-					<groupId>info.cukes</groupId>
-					<artifactId>cucumber-java8</artifactId>
-					<version>${cucumber.version}</version>
-					<scope>test</scope>
-				</dependency>
-
-				<dependency>
-					<groupId>info.cukes</groupId>
-					<artifactId>cucumber-junit</artifactId>
-					<version>${cucumber.version}</version>
-					<scope>test</scope>
-				</dependency>
-
-				<dependency>
-					<groupId>info.cukes</groupId>
-					<artifactId>cucumber-spring</artifactId>
-					<version>${cucumber.version}</version>
-					<scope>test</scope>
-				</dependency>
 	</dependencies>
 </project>
 
